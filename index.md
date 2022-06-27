@@ -5,9 +5,9 @@ layout: default
 **Welcome** to Tama's Memory Game - Japanese edition.
 A vehicle for evaluating Pyhon for gaming.
 
-**Click** the link below to see a playthrough.
+**Click** the image below to see a playthrough.
 
-<a href="https://www.youtube.com/watch?v=    qCyERPZ_h9k&t=7s"><img src="/assets/img/video_link.jpg" width="50px"></a> 
+<a href="https://www.youtube.com/watch?v=    qCyERPZ_h9k&t=7s"><img src="/assets/img/VideoLink.svg" width="50px"></a> 
 
 In this game, you play against an AI (very limited) in three different modes.
 **[Easy, Normal, Hard]** - Hard mode is very unforgiving.
@@ -34,6 +34,8 @@ Choose between three difficulty levels:
 * **Medium** - The AI memorizes the last three moves.
 * **Hard** - The AI memorizes every move since the game began.
 
+![Menu](assets/img/Menu_Difficulty.png)
+
 ## Select a Level Map
 
 Currently there are only two available level maps, Katakana and Hiragana.  There are future plans to add numbers
@@ -43,106 +45,34 @@ and date/time.
 
 ## Start the Game
 
+Press **New Game** to start game play.
+
 ![NewGame](assets/img/Menu_NewGame.png)
 
-### Header 3
+## Make a Match
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+Match the English sound with the corresponding Japanese character.  
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Once two cards have been flipped by the Player, click anywhere on the screen to
+continue.  
 
-#### Header 4
+Note: Some characters will have the same English sounds.  In these situations, hints
+will be displayed on the card prompting the Player with the correct match.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+![Make a matches](assets/img/match_pairs.png)
 
-##### Header 5
+## AI Player's Turn
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+When you see the message **Thinking which card to pick**, it is the AI's turn.
+The AI will choose two cards with a brief pause before flipping the cards back
+over.  
 
-###### Header 6
+![AI Turn](assets/img/AI_Turn.png)
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+## Game Over
 
-### There's a horizontal rule below this.
+The game is over when all cards have been flipped.  
 
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+I hope you enjoyed the
+game.  It's intended to compliment a proper foreign langugage course by
+assisting with memory retention.

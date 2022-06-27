@@ -68,9 +68,9 @@
       <p><strong>Welcome</strong> to Tama’s Memory Game - Japanese edition.
 A vehicle for evaluating Pyhon for gaming.</p>
 
-<p><strong>Click</strong> the link below to see a playthrough.</p>
+<p><strong>Click</strong> the image below to see a playthrough.</p>
 
-<p><a href="https://www.youtube.com/watch?v=    qCyERPZ_h9k&amp;t=7s"><img src="/assets/img/video_link.jpg" width="50px" /></a></p>
+<p><a href="https://www.youtube.com/watch?v=    qCyERPZ_h9k&amp;t=7s"><img src="/assets/img/VideoLink.svg" width="50px" /></a></p>
 
 <p>In this game, you play against an AI (very limited) in three different modes.
 <strong>[Easy, Normal, Hard]</strong> - Hard mode is very unforgiving.</p>
@@ -99,6 +99,8 @@ different menus.</p>
   <li><strong>Hard</strong> - The AI memorizes every move since the game began.</li>
 </ul>
 
+<p><img src="assets/img/Menu_Difficulty.png" alt="Menu" /></p>
+
 <h2 id="select-a-level-map">Select a Level Map</h2>
 
 <p>Currently there are only two available level maps, Katakana and Hiragana.  There are future plans to add numbers
@@ -108,151 +110,37 @@ and date/time.</p>
 
 <h2 id="start-the-game">Start the Game</h2>
 
+<p>Press <strong>New Game</strong> to start game play.</p>
+
 <p><img src="assets/img/Menu_NewGame.png" alt="NewGame" /></p>
 
-<h3 id="header-3">Header 3</h3>
+<h2 id="make-a-match">Make a Match</h2>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
-<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
-  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<p>Match the English sound with the corresponding Japanese character.</p>
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
-<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
-  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre></div></div>
+<p>Once two cards have been flipped by the Player, click anywhere on the screen to
+continue.</p>
 
-<h4 id="header-4">Header 4</h4>
+<p>Note: Some characters will have the same English sounds.  In these situations, hints
+will be displayed on the card prompting the Player with the correct match.</p>
 
-<ul>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-</ul>
+<p><img src="assets/img/match_pairs.png" alt="Make a matches" /></p>
 
-<h5 id="header-5">Header 5</h5>
+<h2 id="ai-players-turn">AI Player’s Turn</h2>
 
-<ol>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-</ol>
+<p>When you see the message <strong>Thinking which card to pick</strong>, it is the AI’s turn.
+The AI will choose two cards with a brief pause before flipping the cards back
+over.</p>
 
-<h6 id="header-6">Header 6</h6>
+<p><img src="assets/img/AI_Turn.png" alt="AI Turn" /></p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">head1</th>
-      <th style="text-align: left">head two</th>
-      <th style="text-align: left">three</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good swedish fish</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">out of stock</td>
-      <td style="text-align: left">good and plenty</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">oreos</code></td>
-      <td style="text-align: left">hmm</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">zoute</code> drop</td>
-      <td style="text-align: left">yumm</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="game-over">Game Over</h2>
 
-<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
+<p>The game is over when all cards have been flipped.</p>
 
-<hr />
-
-<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
-
-<ul>
-  <li>Item foo</li>
-  <li>Item bar</li>
-  <li>Item baz</li>
-  <li>Item zip</li>
-</ul>
-
-<h3 id="and-an-ordered-list">And an ordered list:</h3>
-
-<ol>
-  <li>Item one</li>
-  <li>Item two</li>
-  <li>Item three</li>
-  <li>Item four</li>
-</ol>
-
-<h3 id="and-a-nested-list">And a nested list:</h3>
-
-<ul>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item
-        <ul>
-          <li>level 3 item</li>
-          <li>level 3 item</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item</li>
-</ul>
-
-<h3 id="small-image">Small image</h3>
-
-<p><img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="Octocat" /></p>
-
-<h3 id="large-image">Large image</h3>
-
-<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="Branching" /></p>
-
-<h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>
+<p>I hope you enjoyed the
+game.  It’s intended to compliment a proper foreign langugage course by
+assisting with memory retention.</p>
 
 
       </section>
